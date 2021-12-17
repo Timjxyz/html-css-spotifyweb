@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title> Listening is everything - Spotify</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
@@ -12,9 +16,69 @@
 
     <div class="flex all-container">
         <!-- Inizio barra di navigazione con account e varie playlist salvate-->
-       <header>
+       <header class="flex">
+           <div class="container-header flex ">
+               <!-- Logo con viewport grande-->
+               <div class="logo">
+                   <img src="img/logo.svg" alt="Logo pagina">
+               </div>
 
-   
+               <!-- Logo con viewport piccola-->
+               <div class="logo-small">
+                   <img src="img/logo-small.svg" alt="Logo più piccolo">
+               </div>
+
+               <!-- Prima barra di navigazione superiore -->
+               <nav class="nav-icon">
+                   <ul>
+                       <li><a href="#"><img src="img/home.svg" alt="Vai alla pagina iniziale"> Home</a></li>
+                       <li><a href="#"><img src="img/search.svg" alt="Pulsante cerca">Cerca</a></li>
+                       <li><a href="#"><img src="img/libreria.svg" alt="Vai alla tua libreria"> La tua libreria</a></li>
+
+                    </ul>
+                   
+               </nav>
+
+               <!-- Sezione dedicata alle playlist create -->
+                <section class="playlist">
+
+                    <a class="btn" href="#">
+                       <h2>PLAYLIST</h2>
+                    </a>
+
+                   <div class="add-playlist">
+                        <a class="btn btn-playlist" href="#">
+                           <i class="fas fa-plus-square"></i>
+                           <h3>Crea Playlist</h3>
+                        </a>
+
+                        <nav class="nav-playlist" >
+                            <ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+
+            </div>
+            <!-- Download e profilo -->
+            <section class="account flex">
+                <div class="download">
+                    <a class="flex btn btn-download" href="#">
+                        <img src="img/download.svg" alt="pulsante download">
+                        <div>Installa app</div>
+                        
+                    </a>
+                </div>
+                
+            </section>
        </header>
         <!-- Fine barra di navigazione con account e varie playlist salvate-->
    
@@ -22,6 +86,7 @@
        <main>
            <!-- Pannello superiore main -->
            <div id="panel-main"></div>
+
        </main>
        <!-- Fine corpo centrale della pagina con album musicali  -->
    

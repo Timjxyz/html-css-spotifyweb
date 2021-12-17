@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex{
@@ -12,6 +13,12 @@
 .all-container{
     flex-wrap: wrap;
 }
+
+.btn{
+    text-decoration: none;
+}
+
+
 /* End Common */
 
 /* Start css rules */
@@ -21,8 +28,81 @@ header{
     background-color: black;
     height: calc(100vh - 80px);
     width: 20%;
+    flex-wrap: wrap;
 }
 
+.container-header{
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+    
+}
+.logo img{
+    width: 60%;
+    margin-top: 10px;
+    
+}
+
+.logo-small{
+    display: none;
+}
+
+
+ul li img{
+    height: 30px;
+    margin-top: 10px;   
+    
+}
+
+.nav-icon ul li a{
+    display: flex;
+    align-items:center;
+    color: white;
+    text-decoration: none;      
+}
+
+.playlist h2{
+    color: #fff;
+    margin: 0px 0 10px 0;
+    
+}
+
+.fas.fa-plus-square{
+    font-size: 40px;
+    color:  #a3a3a3;
+    padding-right: 10px;
+}
+
+.add-playlist .btn-playlist{
+    color:  #a3a3a3;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-playlist a{
+    text-decoration: none;
+    color:  #a3a3a3;
+}
+
+.nav-playlist li{
+    padding-top: 10px;
+}
+
+.account{
+    
+    align-self: flex-end;
+}
+.btn-download{
+    align-items: center;
+    color:  #a3a3a3;
+    
+
+}
+.download img{
+    height: 30px;
+}
 /* Fine regole header */
 
 
@@ -62,7 +142,7 @@ footer{
 
 /* Per (xs) Media query */
 @media screen and (max-width: 575px) {
-    
+ /* Inizio regole header */
     header{
 
         background-color: black;
@@ -71,6 +151,24 @@ footer{
         
     
     }
+
+    .container-header{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .logo img{
+        display: none;
+        
+    }
+    
+    .logo-small{
+        width: 70%;
+        display: block;
+        margin-top: 5px;
+    }
+ /* Fine regole header */
 
     main{
         background-color: red;
