@@ -1,0 +1,187 @@
+/*  Start common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.all-container{
+    flex-wrap: wrap;
+}
+/* End Common */
+
+/* Start css rules */
+
+/* Inizio regole header */
+header{
+    background-color: black;
+    height: calc(100vh - 80px);
+    width: 20%;
+}
+
+/* Fine regole header */
+
+
+
+/* Inizio regole main */
+
+main{
+    background-color: red;
+    height: calc(100vh - 80px);
+    width: 80%;
+}
+
+#panel-main{
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+}
+
+/* Fine regole main */
+
+
+
+/* Inizio regole footer */
+
+footer{
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+}
+
+/* Fine regole footer */
+
+/* End css rules */
+
+
+/* Start Media query rules */
+
+/* Per (xs) Media query */
+@media screen and (max-width: 575px) {
+    
+    header{
+
+        background-color: black;
+        height: calc(100vh - 80px);
+        width: 10%;
+        
+    
+    }
+
+    main{
+        background-color: red;
+        height: calc(100vh - 80px);
+        width: 90%;
+    }
+    
+    #panel-main{
+        width: 100%;
+        height: 40px;
+        background-color: gray;
+    }
+
+    footer{
+        background-color: blue;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+/* Per (s) Media quwery */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+    header{
+
+        background-color: black;
+        height: calc(100vh - 80px);
+        width: 30%;
+        
+    
+    }
+
+    main{
+        background-color: red;
+        height: calc(100vh - 80px);
+        width: 70%;
+    }
+    
+    #panel-main{
+        width: 100%;
+        height: 40px;
+        background-color: gray;
+    }
+
+    footer{
+        background-color: blue;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+/* Per (md) Media query */
+@media screen and (min-width: 768px) and (max-width:991px){
+    
+    header{
+
+        background-color: black;
+        height: calc(100vh - 80px);
+        width: 20%;
+        
+    
+    }
+
+    main{
+        background-color: red;
+        height: calc(100vh - 80px);
+        width: 80%;
+    }
+    
+    #panel-main{
+        width: 100%;
+        height: 40px;
+        background-color: gray;
+    }
+
+    footer{
+        background-color: blue;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+/* Per (LG) Media query */
+@media screen and (min-width: 992px){
+    
+    header{
+
+        background-color: black;
+        height: calc(100vh - 80px);
+        width: 20%;
+        
+    
+    }
+
+    main{
+        background-color: red;
+        height: calc(100vh - 80px);
+        width: 80%;
+    }
+    
+    #panel-main{
+        width: 100%;
+        height: 40px;
+        background-color: gray;
+    }
+
+    footer{
+        background-color: blue;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+/* End Media query rules */
