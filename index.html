@@ -24,16 +24,15 @@
                </div>
 
                <!-- Logo con viewport piccola-->
-               <div class="logo-small">
-                   <img src="img/logo-small.svg" alt="Logo più piccolo">
-               </div>
-
+               
                <!-- Prima barra di navigazione superiore -->
                <nav class="nav-icon">
+                   
                    <ul>
-                       <li><a href="#"><img src="img/home.svg" alt="Vai alla pagina iniziale"> Home</a></li>
-                       <li><a href="#"><img src="img/search.svg" alt="Pulsante cerca">Cerca</a></li>
-                       <li><a href="#"><img src="img/libreria.svg" alt="Vai alla tua libreria"> La tua libreria</a></li>
+                       <li class="logo-small"><a href="#"><img src="img/logo-small.svg" alt="Logo più piccolo"></a></li>
+                       <li><a href="#"><img src="img/home.svg" alt="Vai alla pagina iniziale"><span>Home</span></a></li>
+                       <li><a href="#"><img src="img/search.svg" alt="Pulsante cerca"><span>Cerca</span></a></li>
+                       <li><a href="#"><img src="img/libreria.svg" alt="Vai alla tua libreria"><span>La tua libreria</span></a></li>
 
                     </ul>
                    
@@ -70,13 +69,19 @@
             </div>
             <!-- Download e profilo -->
             <section class="account flex">
-                <div class="download">
+                <div class="download ">
                     <a class="flex btn btn-download" href="#">
                         <img src="img/download.svg" alt="pulsante download">
                         <div>Installa app</div>
                         
                     </a>
+                    
+                    <div class="account-btn flex">
+                        <a href="#"> <img src="img/profile.svg" alt="Pulsante per entrare nel profilo"></a>
+                        <h3 id="user-name">John Doe</h3>
+                    </div>
                 </div>
+                
                 
             </section>
        </header>
