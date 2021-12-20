@@ -16,8 +16,8 @@
 
     <div class="flex all-container">
         <!-- Inizio barra di navigazione con account e varie playlist salvate-->
-       <header class="flex">
-           <div class="container-header flex ">
+       <header id="sidebar" class="flex">
+           <div class="container-sidebar flex ">
                <!-- Logo con viewport grande-->
                <div class="logo">
                    <img src="img/logo.svg" alt="Logo pagina">
@@ -42,13 +42,13 @@
                 <section class="playlist">
 
                     <a class="btn" href="#">
-                       <h2>PLAYLIST</h2>
+                       <h3>PLAYLIST</h3>
                     </a>
 
                    <div class="add-playlist">
                         <a class="btn btn-playlist" href="#">
                            <i class="fas fa-plus-square"></i>
-                           <h3>Crea Playlist</h3>
+                           <h5>Crea Playlist</h5>
                         </a>
 
                         <nav class="nav-playlist" >
@@ -69,7 +69,7 @@
             </div>
             <!-- Download e profilo -->
             <section class="account flex">
-                <div class="download ">
+                <div class="download flex">
                     <a class="flex btn btn-download" href="#">
                         <img src="img/download.svg" alt="pulsante download">
                         <div>Installa app</div>
@@ -90,9 +90,90 @@
        <!-- Inizio corpo centrale della pagina con album musicali  -->
        <main>
            <!-- Pannello superiore main -->
-           <div id="panel-main"></div>
+           <div id="panel-main">
+               <a class="btn-main" href="#"> EFFETTUA L'UPGRADE</a>
+           </div>
 
-       </main>
+           <!-- Lista in evidenza -->
+           <section>
+               <nav class="main-nav">
+                    <ul>
+                       <li><a href="#">IN EVIDENZA</a></li>
+                       <li><a href="#">PODCAST</a></li>
+                       <li><a href="#">CLASSIFICHE</a></li>
+                       <li><a href="#">GENERI E MOOD</a></li>
+                       <li><a href="#">NUOVE USCITE</a></li>
+                       <li><a href="#">SCOPRI</a></li>
+                       
+                    </ul>
+               </nav>
+           </section>
+           <!-- Sezione album riprodotti di recente -->
+            <section class="riprodotti">
+                    
+                <h2>Recently played</h2>
+
+                <div class="album ">
+                    <div class="copertina">
+                        <img src="img/metal_lifting.jpg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+                    </div>
+                    <div class="copertina">
+                        <img src="img/stranger.jpeg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="copertina">
+                        <img src="img/aquietplace.jpeg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+                    </div>
+
+                    <div class="copertina">
+                        <img src="img/split.jpeg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+                    </div>
+
+                    <div class="copertina">
+                        <img src="img/cure.jpeg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+                    </div>
+
+                    <div class="copertina">
+                        <img src="img/sinister.jpeg" alt="album-img">
+                        <div class="text-copertina">
+                            <h6>Heavy Metal</h6>
+                            <p>Subtitle</p>
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+
+        </main>
        <!-- Fine corpo centrale della pagina con album musicali  -->
    
        <!-- Inizio comandi per la riproduzione musicale -->
