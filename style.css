@@ -286,8 +286,9 @@ footer{
 /* Parte sinistra del footer */
 .sx{   
     align-items: center;
-    width: 30%;
+    width: 20%;
     flex-shrink: 1;
+    justify-content: flex-start;
 }
 .col.sx img{
     width: 25px;
@@ -309,7 +310,7 @@ footer{
 }
 
 .icone-footer a{
-    margin-left: 30px;
+    padding-left: 15px;
     color: #a3a3a3;
     
     
@@ -317,12 +318,13 @@ footer{
 
 /* Parte centrale del footer */
 .middle{
-    width: calc(100% - 60%);
+    width: calc(100% - 40% - 60px);
     flex-direction: column;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    flex-grow: 2;
+    flex-shrink: 1;
+    margin: 0 30px;
 }
 .btn-riproduzione a{
     margin:0 10px;
@@ -380,7 +382,7 @@ footer{
 }
 
 .barra.volume{
-    width: 100px;
+    width: 100%;
     height: 3px;
     background-color: #a3a3a367;
     border-radius: 3px;
@@ -413,7 +415,7 @@ footer{
 /* Start Media query rules */
 
 /* Per (xs) Media query */
-@media screen and (max-width: 575px) {
+@media screen and  (max-width:575px) {
  /* Inizio regole header */
     #sidebar{
 
