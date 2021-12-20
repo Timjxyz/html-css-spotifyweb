@@ -225,6 +225,7 @@
        <!-- Inizio comandi per la riproduzione musicale -->
         <footer class="flex">
 
+            <!-- Sezione sinistra del footer -->
             <div class="col sx flex">
                 <img src="img/sinister.jpeg" alt="immagine album in riproduzione">
                 <div class="text-copertina">
@@ -239,9 +240,37 @@
             </div>
 
         
-            <div class="col middle flex"></div>
+            <!-- Sezione centrale del footer -->
+            <div class="col middle flex">
+                <div class="btn-riproduzione">
+
+                    <a href="#"><i class="fas fa-random"></i></a>
+                    <a href="#"><i class="fas fa-step-backward"></i></a>
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                    <a href="#"><i class="fas fa-step-forward"></i></a>
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                </div>
+
+                <div class="barra-musica flex">
+                    <div class="tempo riproduzione">
+                       <span>0:25</span>
+                    </div>
+                    <div class="barra-riproduzione">
+                        <div class="tempo-effettivo">
+                        
+                           <i id="tempo-min" class="fas fa-circle"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="tempo tot-riproduzione">
+                       <span>4:35</span>
+                    </div>
+
+                </div>
+            </div>
 
 
+            <!-- Sezione destra del footer -->
             <div class="col dx flex">
                 <i class="fas fa-list-ul"></i>
                 <i class="fas fa-desktop"></i>
