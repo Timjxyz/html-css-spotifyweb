@@ -279,9 +279,76 @@ footer{
     bottom: 0;
     left: 0;   
     z-index: 9999999;
+    justify-content: space-between;
+}
+.sx{   
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.col.sx img{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.col.sx .text-copertina{
+    flex-shrink: 0;
+}
+.col.sx .text-copertina h6{
+    color: #fff;
+}
+.col.sx .text-copertina p{
+    font-size: 11px;
+}
+
+.icone-footer a{
+    margin-left: 30px;
+    color: #a3a3a3;
+    
     
 }
 
+
+.middle{
+   
+}
+.dx{
+    
+    align-items: center;
+   
+}
+
+.fas.fa-desktop{
+    margin: 0 10px;
+}
+
+.barra.volume{
+    width: 100px;
+    height: 3px;
+    background-color: #a3a3a367;
+    border-radius: 3px;
+    margin: 0 20px;
+}
+#volume{
+    width: 40%;
+    background-color: #c1c1c1;
+    height: 3px;
+    position: relative;
+}
+
+.col.dx .fas{
+    color: #fff;
+}
+
+.fas.fa-circle{
+    position: absolute;
+    left: 30px;
+    top: -6px;
+    color: #fff;
+    display: none;
+}
 
 /* Fine regole footer */
 
@@ -367,6 +434,10 @@ footer{
     main{
         
         height: calc(100vh - 80px);
+        width: calc(100% - 50px);
+    }
+
+    #panel-main{
         width: calc(100% - 50px);
     }
     

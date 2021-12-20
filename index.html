@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title> Listening is everything - Spotify</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
@@ -223,7 +223,37 @@
        <!-- Fine corpo centrale della pagina con album musicali  -->
    
        <!-- Inizio comandi per la riproduzione musicale -->
-       <footer></footer>
+        <footer class="flex">
+
+            <div class="col sx flex">
+                <img src="img/sinister.jpeg" alt="immagine album in riproduzione">
+                <div class="text-copertina">
+                    <h6>Sinister</h6>
+                    <a href="#"><p>Brano Nome</p></a>
+                </div>
+
+                <div class="icone-footer flex">
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+            </div>
+
+        
+            <div class="col middle flex"></div>
+
+
+            <div class="col dx flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="barra volume">
+                    <div id="volume">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
        <!-- Fine comandi per la riproduzione musicale -->
 
     </div>
