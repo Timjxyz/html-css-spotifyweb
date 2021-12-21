@@ -703,6 +703,13 @@ footer{
         justify-content: center;
         
     }
+
+    .barra.volume{
+        display: none;
+    }
+    #volume{
+        display: none;
+    }
     
 }
 
