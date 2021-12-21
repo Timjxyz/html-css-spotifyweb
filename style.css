@@ -44,7 +44,7 @@ a{
 }
 
 .container-sidebar{
-   
+   flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
     
@@ -60,7 +60,9 @@ a{
     display: none;
 }
 
-
+.nav-icon{
+    margin-top: 10px;
+}
 ul li img{
     height: 30px;
     margin-top: 10px;   
@@ -90,9 +92,8 @@ ul li img{
 }
 
 .nav-playlist{
-    z-index: 1;
     overflow-y: auto;
-    height: 50vh;
+    
     
 }
 
@@ -120,7 +121,6 @@ ul li img{
     flex-wrap: wrap;
     padding: 0 10px;
     margin-top: auto;
-    z-index: 9999999;
     position: fixed;
     background-color: #000;
 }
@@ -189,16 +189,20 @@ main{
 }
 
 #panel-main .btn-main{
-    
+    line-height: 40px;
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 16px;
     padding: 5px 14px;
-    margin-right: 20px;
-    
+    margin-right: 30px;
+    display: inline-block;
 }
 
+.btn-main:hover{
+    transform: scale(1.1);
+    
+}
 /* Nav di main */
 .main-nav ul{
     text-align: center;
@@ -208,14 +212,28 @@ main{
     display: inline;
     padding: 0 10px;
     
+    
 }
 .main-nav li a{
     color: #a3a3a3;
     font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    padding: 5px 0px;
+}
+.main-nav li a.active::after{
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 /* Inizio album ripodotti di recente */
 .riprodotti{
-    margin-left: 20px;
+    
     margin-top: 30px;
 }
 .riprodotti h2{
@@ -286,18 +304,16 @@ footer{
 /* Parte sinistra del footer */
 .sx{   
     align-items: center;
-    width: 20%;
+    width: 200px;
     flex-shrink: 1;
     justify-content: flex-start;
 }
 .col.sx img{
     width: 25px;
-    margin: 0 10px;
+    
 }
 
-.col.sx .text-copertina{
-    flex-shrink: 0;
-}
+
 .col.sx .text-copertina h6{
     color: #fff;
 }
@@ -318,24 +334,25 @@ footer{
 
 /* Parte centrale del footer */
 .middle{
-    width: calc(100% - 40% - 60px);
+    width: calc(100% - 380px - 30px);
     flex-direction: column;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 1;
-    margin: 0 30px;
+    flex-shrink: 0;
+    margin-left:30px;
 }
 .btn-riproduzione a{
-    margin:0 10px;
-    margin-bottom: 20px;
+    padding: 0 10px;
+    
 }
 .btn-riproduzione{
     margin-bottom: 20px;
 }
 .barra-musica{
-    width: 100%;
+    width: 50%;
     align-items: center;
+    justify-content: center;
 }
 .barra-riproduzione{
     width: 100%;
@@ -371,9 +388,9 @@ footer{
 
 /* Parte destra del footer */
 .dx{
-    flex-shrink: 1;
+    
     align-items: center;
-    width: 30%;
+    width: 180px;
     justify-content: flex-end;
 }
 
@@ -382,7 +399,7 @@ footer{
 }
 
 .barra.volume{
-    width: 100%;
+    width: 100px;
     height: 3px;
     background-color: #a3a3a367;
     border-radius: 3px;
@@ -428,7 +445,6 @@ footer{
 
     .container-sidebar{
         width: 100%;
-        justify-content: center;
         display: flex;
         align-content: flex-start;
         
@@ -447,6 +463,7 @@ footer{
     }
     .nav-icon{
         align-items: flex-start;
+        
     }
     .nav-icon span{
         display: none;
