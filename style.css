@@ -46,11 +46,12 @@ a{
 .container-sidebar{
    flex-direction: column;
     flex-wrap: wrap;
-    padding: 10px;
+   
     
     
 }
 .logo img{
+    margin-left: 10px;
     width: 60%;
     margin-top: 10px;
     
@@ -62,12 +63,19 @@ a{
 
 .nav-icon{
     margin-top: 10px;
+
 }
+
 ul li img{
     height: 30px;
     margin-top: 10px;   
-    
+    padding-left: 10px;
 }
+.nav-icon .here{
+    
+    border-left: 3px solid #94dd25;
+}
+
 
 .nav-icon ul li a{
     display: flex;
@@ -77,6 +85,7 @@ ul li img{
     
 }
 .playlist{
+    padding-left: 10px;
     margin-top: 10px;
 }
 .playlist h3{
@@ -91,17 +100,16 @@ ul li img{
     padding-right: 10px;
 }
 
-.nav-playlist{
-    overflow-y: auto;
-    
-    
+.add-playlist{
+    overflow-y: hidden;
 }
+
 
 .add-playlist .btn-playlist{
     color:  #a3a3a3;
     display: flex;
     align-items: center;
-    
+   
 }
 
 
