@@ -29,6 +29,64 @@ a{
     color: #fff;
 }
 
+
+/* Regole hover */
+
+.copertina:hover .press-play{
+    display: block;
+    filter: grayscale(0.9);
+}
+
+.copertina img:hover{
+    filter: grayscale(0.9);
+        
+    
+}
+.copertina a:hover{
+    filter: grayscale(0.9);
+}
+
+.main-nav li a:hover{
+    color: #fff;
+}
+
+.nav-icon a:hover{
+    color: #fff;
+}
+
+.playlist a:hover{
+    color: #fff;
+}
+
+.download.flex a:hover{
+    color: #fff;
+}
+
+
+.col.sx  p:hover{
+    color: #fff;
+}
+
+.icone-footer.flex a:hover{
+    color: #fff;
+}
+
+.btn-riproduzione .far.fa-play-circle:hover{
+    transform: scale(2.2);
+}
+
+.btn-main:hover{
+    transform: scale(1.1);
+    
+}
+
+.barra-riproduzione:hover .fa-circle{
+    display: block;
+}
+
+.barra.volume:hover .fa-circle{
+    display: block;
+}
 /* End Common */
 
 /* Start css rules */
@@ -71,8 +129,8 @@ ul li img{
     margin-top: 10px;   
     padding-left: 10px;
 }
-.nav-icon .here{
-    
+.nav-icon .here a{
+    color: #fff;
     border-left: 3px solid #94dd25;
 }
 
@@ -80,7 +138,7 @@ ul li img{
 .nav-icon ul li a{
     display: flex;
     align-items:center;
-    color: white;
+    color: #a3a3a3;
     text-decoration: none;   
     
 }
@@ -207,10 +265,7 @@ main{
     display: inline-block;
 }
 
-.btn-main:hover{
-    transform: scale(1.1);
-    
-}
+
 /* Nav di main */
 .main-nav ul{
     text-align: center;
@@ -264,10 +319,31 @@ main{
     margin: 0 10px;
     text-align: center;
     height: 350px;
+    transition: ease 3s;
     
+}
+
+.copertina a{
+    display: inline-block;
+    position: relative;
+    transition: 2s;
 }
 .copertina img{
     width: 100%;
+    transition: 2s;
+    
+    
+}
+
+.press-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 70px;
+    display: none;
+    
+    
 }
 
 .text-copertina h4{
@@ -312,13 +388,13 @@ footer{
 /* Parte sinistra del footer */
 .sx{   
     align-items: center;
-    width: 200px;
+    width: 20%;
     flex-shrink: 1;
     justify-content: flex-start;
 }
 .col.sx img{
-    width: 25px;
-    
+    width: 20%;
+    margin: 0 10px;
 }
 
 
@@ -342,13 +418,13 @@ footer{
 
 /* Parte centrale del footer */
 .middle{
-    width: calc(100% - 380px - 30px);
+    width: 80%;
     flex-direction: column;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    margin-left:30px;
+    flex-grow: 1;
+    
 }
 .btn-riproduzione a{
     padding: 0 10px;
@@ -387,7 +463,7 @@ footer{
 
 #tempo-min{
     position: absolute;
-    left: 50px;
+    left: 87px;
     top: -6px;
     color: #fff;
     
@@ -396,9 +472,8 @@ footer{
 
 /* Parte destra del footer */
 .dx{
-    
+    width: 170px;
     align-items: center;
-    width: 180px;
     justify-content: flex-end;
 }
 
@@ -407,11 +482,12 @@ footer{
 }
 
 .barra.volume{
-    width: 100px;
+    width: 200px;
     height: 3px;
     background-color: #a3a3a367;
     border-radius: 3px;
     margin: 0 20px;
+    position: relative;
 }
 #volume{
     width: 40%;
@@ -426,7 +502,7 @@ footer{
 
 .fa-circle{
     position: absolute;
-    left: 30px;
+    left: 20px;
     top: -6px;
     color: #fff;
     display: none;
@@ -443,11 +519,8 @@ footer{
 @media screen and  (max-width:575px) {
  /* Inizio regole header */
     #sidebar{
-
-       
         height: calc(100vh - 80px);
-        width: 50px;
-        
+        width: 50px;  
     
     }
 
@@ -527,7 +600,7 @@ footer{
         width: calc(100% / 2 - 20px);
     
     }
-
+    
     
 }
 
