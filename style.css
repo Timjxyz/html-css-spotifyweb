@@ -170,7 +170,10 @@ ul li img{
    
 }
 
-
+.nav-playlist{
+    height: 30vh;
+    overflow-y: auto;
+}
 
 .nav-playlist a{
     text-decoration: none;
@@ -182,7 +185,7 @@ ul li img{
 }
 /* Parte inferiore del header con download e account */
 .account{
-    width: 170px;
+    width: 180px;
     align-self: flex-end;
     flex-wrap: wrap;
     padding: 0 10px;
