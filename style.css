@@ -421,7 +421,7 @@ footer{
 
 /* Parte centrale del footer */
 .middle{
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     font-size: 18px;
     justify-content: center;
@@ -680,6 +680,38 @@ footer{
    
 
    
+}
+
+
+/* Rendere il footer ancora più piccolo */
+@media screen and (max-width: 500px) {
+
+    .sx{   
+        align-items: center;
+        width: 160px;
+        
+    }
+    .middle{
+        width: calc(100% -370px);
+        
+        
+    }
+    .dx{
+        width: 100px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .barra.volume{
+        width: 100%;
+        height: 3px;
+        background-color: #a3a3a367;
+        border-radius: 3px;
+        margin: 0 20px;
+        position: relative;
+    }
 }
 
 /* End Media query rules */
