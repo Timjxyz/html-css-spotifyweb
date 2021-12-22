@@ -34,16 +34,16 @@ a{
 
 .copertina:hover .press-play{
     display: block;
-    filter: grayscale(0.9);
+    filter: sepia(100%);
 }
 
 .copertina img:hover{
-    filter: grayscale(0.9);
+    filter: sepia(100%);
         
     
 }
 .copertina a:hover{
-    filter: grayscale(0.9);
+    filter: sepia(100%);
 }
 
 .main-nav li a:hover{
@@ -86,6 +86,14 @@ a{
 
 .barra.volume:hover .fa-circle{
     display: block;
+}
+
+.tempo-effettivo:hover{
+    background-color: #94dd25;
+}
+
+#volume:hover{
+    background-color: #94dd25;
 }
 /* End Common */
 
@@ -242,6 +250,8 @@ main{
     width: calc(100% - 180px);
     overflow-y: auto;
     padding-top: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Pannello superiore main */
@@ -324,7 +334,8 @@ main{
     text-align: center;
     height: 350px;
     transition: ease 3s;
-    
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .copertina a{
