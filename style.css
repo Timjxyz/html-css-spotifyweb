@@ -498,6 +498,7 @@ footer{
 
 .barra.volume{
     width: 200px;
+    min-width: 50px;
     height: 3px;
     background-color: #a3a3a367;
     border-radius: 3px;
@@ -641,18 +642,7 @@ footer{
         
     }
 
-    .dx{
-        width: 20%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .barra.volume{
-        display: none;
-    }
-    #volume{
-        display: none;
-    }
+    
    
 
     
