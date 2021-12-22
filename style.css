@@ -433,7 +433,7 @@ footer{
 
 /* Parte centrale del footer */
 .middle{
-    width: 100%;
+    width: calc(100% - 40%);
     flex-direction: column;
     font-size: 18px;
     justify-content: center;
@@ -487,7 +487,7 @@ footer{
 
 /* Parte destra del footer */
 .dx{
-    width: 170px;
+    width: 20%;
     align-items: center;
     justify-content: flex-end;
 }
@@ -639,6 +639,19 @@ footer{
     
         width: calc(100% / 2 - 20px);  
         
+    }
+
+    .dx{
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra.volume{
+        display: none;
+    }
+    #volume{
+        display: none;
     }
    
 
